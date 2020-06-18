@@ -11,4 +11,6 @@ class PatientBasicDetail(models.Model):
     phone_no=models.CharField(max_length=100)
     address=models.CharField(max_length=500)
     password=models.CharField(max_length=100)
+
+
     
