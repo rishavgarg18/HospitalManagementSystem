@@ -111,32 +111,22 @@ PENDING APPOINTMENTS FOR MANAGER  (METHOD-GET)
 
 
 	  Response-200
+	[{"id": 1, "patient__email": "rgrgarg18@gmail.com", "patient__phone_no": "8218730916", "appointment_date": "2020-08-10", "appointment_time": "10:25:00", "problem": "testproblem1", "existing_disease": "existingdiseasetest12ndproblem", "patient__first_name": "Rishav", "patient__last_name": "Garg"}, {"id": 2, "patient__email": "sameer@gmail.com", "patient__phone_no": "1234567890", "appointment_date": "2020-08-12", "appointment_time": "11:25:00", "problem": "testproblem2", "existing_disease": "existingdiseasetest1,2ndproblem", "patient__first_name": "Sameer", "patient__last_name": "Verma"}, {"id": 4, "patient__email": "arjunkaushik810@gmail.com", "patient__phone_no": "902711372", "appointment_date": "2020-08-13", "appointment_time": "11:40:00", "problem": "testproblem3", "existing_disease": "existingdiseasetest1,2ndproblem", "patient__first_name": "arjun ", "patient__last_name": "kaushik"}, {"id": 5, "patient__email": "arjunkaushik810@gmail.com", "patient__phone_no": "902711372", "appointment_date": "2020-06-19", "appointment_time": "14:13:00", "problem": "Fever, Cold ", "existing_disease": "AIDS, Diabetes", "patient__first_name": "arjun ", "patient__last_name": "kaushik"}]
+
+
+EDIT APPOINTMENT(METHOD - POST)
+	REQUEST -/appointment/editappointment/
+
+	Data to be send (json)
 	{
-				  {
-        "id": 1,
-        "patient_id": 1,
-        "doctor_id": null,
-        "problem": "testproblem1",
-        "existing_disease": "existingdiseasetest12ndproblem",
-        "appointment_date": "2020-08-10",
-        "appointment_time": "10:25:00",
-        "status": "TO MANAGER",
-        "add_date": "2020-06-13T08:57:53.887Z"
-    },
-    {
-        "id": 2,
-        "patient_id": 2,
-        "doctor_id": null,
-        "problem": "testproblem2",
-        "existing_disease": "existingdiseasetest1,2ndproblem",
-        "appointment_date": "2020-08-12",
-        "appointment_time": "11:25:00",
-        "status": "TO MANAGER",
-        "add_date": "2020-06-13T08:59:11.800Z"
-    },
+
+			"id":2,
+			"appointment_date":"YYYY-MM-DD",
+			"appointment_time":"HH-MM"
+
+
+
 	}
-
-
 
 
 

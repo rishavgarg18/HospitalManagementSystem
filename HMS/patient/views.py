@@ -17,7 +17,7 @@ def PatientLogin(request):
         login_data=json.loads(request.body)
         email=login_data['email']
         password=login_data['password']
-        if PatientBasicDetail.objects.filter(email=email,password=password).exists():
+        if PatientBasicDetail.objects.filter(email__contains=email,password__contains=password).filter(email=email,password=password).exists():
             return_data=PatientBasicDetail.objects.filter(email=email).values()
             return JsonResponse(list(return_data),safe=False)
         else:

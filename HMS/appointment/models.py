@@ -12,5 +12,5 @@ class appointments(models.Model):
     appointment_time=models.TimeField()
     status=models.CharField(max_length=200,default="TO MANAGER")
     add_date=models.DateTimeField(auto_now_add=True)
-
+    message=models.CharField(max_length=300,null=True)
 

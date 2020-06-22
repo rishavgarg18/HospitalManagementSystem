@@ -20,7 +20,7 @@ def DoctorLogin(request):
         login_data=json.loads(request.body)
         email=login_data['email']
         password=login_data['password']
-        if DoctorBasicDetail.objects.filter(email=email,password=password).exists():
+        if DoctorBasicDetail.objects.filter(email__contains=email,password__contains=password).filter(email=email,password=password).exists():
             return_data=DoctorBasicDetail.objects.filter(email=email).values()
             return JsonResponse(list(return_data),safe=False)
         else:
