@@ -8,7 +8,6 @@ urlpatterns = [
     path('add/',add_appointment),
     path('receptionpending/',reception_view_appointment_pending),
     path('doctorpending/',doctor_view_appointment_pending),
-    # path('editappointment/',edit_appointment),
     path('rejectappointment/',reject_appointment),
     path('doctorlist/',send_doctor_list),
     path('forwardtodoctor/',forward_doctor),
