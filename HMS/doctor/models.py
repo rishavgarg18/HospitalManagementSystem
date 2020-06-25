@@ -1,4 +1,5 @@
 from django.db import models
+from patient.models import PatientBasicDetail
 
 # Create your models here.
 
@@ -15,4 +16,10 @@ class DoctorBasicDetail(models.Model):
     degree=models.CharField(max_length=100,null=True)
     previous_exp=models.IntegerField(null= True)
     status=models.CharField(max_length=50,default="NOT APPROVED")
+
+
+
+
+
+
     

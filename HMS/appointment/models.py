@@ -13,4 +13,5 @@ class appointments(models.Model):
     status=models.CharField(max_length=200,default="TO MANAGER")
     add_date=models.DateTimeField(auto_now_add=True)
     message=models.CharField(max_length=300,null=True)
+    payment_info=models.CharField(max_length=100,default="FALSE")
 
